@@ -19,12 +19,17 @@ body {
 
 header {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 35px;
 }
  
+
+
+
 main {
 
     min-height: 300px;
@@ -81,10 +86,13 @@ main {
     flex: 1;
 }
 
+.herobox2 img {
+    border-radius: 10px;
+}
+
 
 
 a {
-    padding-right: 10px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -121,7 +129,6 @@ i {
 
 .button1 {
     background-color: white;
-    margin: 50px;
     color: #FA4083;
     font-family: 'Playfair Display', serif;
     padding: 15px 27px;
@@ -133,4 +140,16 @@ i {
 a.button1 {
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navbutton {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.205);
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px 27px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.205);
 }
