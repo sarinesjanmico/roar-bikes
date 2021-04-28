@@ -1,0 +1,31 @@
+.dropdown a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navbar {
+    background-color: orange;
+    width: 100px;
+    display: inline-block;
+    padding: 15px 15px;
+    text-align: center;
+    position: relative;
+}
+
+/* When Not Hovered */
+.navbar .dropdownitem {
+   display: none;
+   position: absolute;
+   z-index: 100;
+   padding-top: 20px;
+   margin-left: -14px;
+}
+
+/* When Hovered */
+.navbar:hover .dropdownitem {
+    display: block;
+}
+.dropdownitem:hover .navbar:hover{
+    background-color: saddlebrown;
+}
+

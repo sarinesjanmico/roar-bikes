@@ -1,9 +1,10 @@
 html{
-    height: 100%;
+    background-image: linear-gradient(#FC5E55,#FA4083);
 }
 
 body {
-    background-image: linear-gradient(#FC5E55,#FA4083);
+    background-image: url(img/image-lion-background.png);
+    background-size: 100%;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.125rem;
@@ -12,7 +13,6 @@ body {
 .container {
     width: 1024px;
     min-height: 300px;
-    
     margin-left: auto;
     margin-right: auto;
 }
@@ -27,7 +27,9 @@ header {
     margin-bottom: 35px;
 }
  
-
+header a {
+    font-family: 'Playfair Display', serif;
+}
 
 
 main {
@@ -37,10 +39,21 @@ main {
     align-items: center;
 }
 
+
+.main2 {
+    min-height: 300px;     
+}
+
+
+
 .cards {
     display: flex;
     justify-content: space-between;
     text-align: center;
+}
+
+.cards a {
+    text-shadow: 2px 2px 2px rgb(26, 26, 26);
 }
 
 .card1 {
@@ -51,6 +64,7 @@ main {
     width: 30%;
     
 }
+
 
 .card2 {
     background-image: url(img/image-background-card2.jpg);
@@ -74,6 +88,7 @@ main {
     border-radius: 10px;
     box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.657);
 }
+
 
 .herobox1 {
     width: 50%;
@@ -102,7 +117,7 @@ h1 {
     font-size: 3.25rem;
     font-family: 'Playfair Display', serif;
     margin-bottom: 1rem;
-    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.205);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.205);
 }
 
 h2 {
@@ -123,6 +138,7 @@ p {
 
 }
 
+
 i {
     font-size: 100px;
 }
@@ -137,6 +153,11 @@ i {
     box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.205);
 }
 
+.button1:hover {
+    background-color: rgb(255, 134, 209);
+    transition-duration: .4s;
+}
+
 a.button1 {
     display: inline-block;
     margin-top: 20px;
@@ -146,10 +167,123 @@ a.button1 {
 .navbutton {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.205);
     margin-left: 10px;
     border: 1px solid white;
     border-radius: 5px;
-    padding: 15px 27px;
+    padding: 12px 24px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.205);
+    display: inline-block;
+    position: relative;
+}
+
+.dropdownforbookonline {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    padding-top: 18px;   
+    text-align: center;
+    
+}
+
+.navbutton:hover .dropdownforbookonline {
+    display: block;
+}
+
+.dropdownforbookonline .navbutton {
+    width: 110px;
+    background-color: white;
+    color: #FA4083; 
+    border-radius: 0;
+    margin-left: -25px;
+}
+
+.dropdownforbookonline .navbutton a {
+    color: #FA4083;
+}
+
+.dropdownforbookonline:hover .navbutton:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+/* My Code / Works, but just different from Daniel Scott */
+/* Code for When not hovered no dropdown will show */
+/* .dropdownforbookonline {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    padding-top: 20px;
+}
+
+.navbutton:hover .dropdownforbookonline {
+    display: block;
+}
+
+.dropdownforbookonline:hover .navbutton:hover {
+    background-color: rgba(255, 255, 255, 0.685);
+} */
+
+
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.tbox :last-child {
+    font-size: .8rem;
+}
+
+.inputwrapper {
+    margin-bottom: 23px;
+}
+
+.contact-us-form {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+input[type=text], input[type=email], textarea  {
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.margin-right-a {
+    margin-right: 8px;
+}
+
+.button2 {
+    border-style: none;
+    font-size: 16px;
+    background-color: white;
+    color: #FA4083;
+    font-family: 'Playfair Display', serif;
+    padding: 10px 20px;
+    margin-left: 0px; 
+    border-radius: 50px;
+    box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.205);
+}
+
+.button2:hover {
+    background-color: rgb(255, 134, 209);
+    transition-duration: .4s;
 }

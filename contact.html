@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roar Cycles</title>
+    <title>Roar Cycles - Contact Us Details and Phone Number</title>
+    <meta name="description" content="Contact Details for Roar Cycles : Zone-9, Anhawon, Bulua,Cagayan de Oro City; 09658356946">
+
+
     <!-- This is Eric Meyer's CSS Reset -->
+
     <link rel="stylesheet" href="css-reset.css">
     <!-- This is my own stylesheet -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d9746a7f6.js" crossorigin="anonymous"></script>
-    
+
 </head>
 <body>
     <div class="container">
         <header>
             <div class="logo">
-                <a href="index.html">
+               <a href="index.html">
                     <img src="img\logo-roar-bikes.svg" alt="logo for bike repair shop roar bikes">
-                </a>    
+                </a>
              </div>
 
              <nav>
         
                     <div class="navbutton">
-                        <a href="#">Book Online</a>
+                        <a href="index.html">Book Online</a>
 
                         <div class="dropdownforbookonline">
                             <div class="navbutton"><a href="#">Onsite Service</a></div>
@@ -62,18 +66,65 @@
 
         </header> 
 
-        <main>
-            <div class="herobox1">
-                <h1>Mobile bike repairs.</h1>
-                <p>Many people have difficulty getting their bikes to a bike shop. We call to your office or home anywhere in greater Dublin.<br> 
-                Fast, convenient bike servicing with up-front pricing. All without the hassle of taking your bike into a shop.</p>
-                <a href="test-page.html" target="_blank" class="button1">Book Online!</a>
 
-            </div>    
-            <div class="herobox2">
-                <img src="img\image-bike-repair-service-a.jpg" alt="person servicing a bike in dublin ">
-            </div>    
-        </main>
+        <div class="main2">
+            
+            <h1>Contact Us</h1>
+            <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.
+            </p>
+       
+            <form action="mail.php" method="post" class="contact-us-form">
+
+                <div class="inputwrapper">
+                    <label for="name" class="newline">First Name: </label>
+                        <input type="text" name="name" id="name" placeholder="First Name" required>
+                </div>
+
+                <div class="inputwrapper">
+                    <label for="email" class="newline">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                </div>
+
+              
+
+                <div class="inputwrapper">
+                    <textarea name="" id="message" cols="70" rows="8" placeholder="Let us know what you think" required></textarea>
+                </div>
+
+                <div class="inputwrapper">
+                    <input type="checkbox" name="email-sub" id="email-sub" value="yes-sign-me-up" checked>
+                    <label for="email-sub">Sign Up for Email Newsletter</label>
+                </div>
+                
+                    
+                <div class="inputwrapper">
+
+                    <p>How would you like to be contacted?</p>
+                    <input type="radio" name="contact-pref" id="phone" value="Phone">
+                    <label for="phone" class="margin-right-a">Phone</label>
+                
+                    <input type="radio" name="contact-pref" id="email-radio" value="Email">
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="inputwrapper">
+                    <label for="Branch">Roar Cycles Branch:</label>
+                    <select name="Branch" id="country">
+                        <option value="Not Chosen">Choose Branch</option>
+                        <option value="Agora">Agora</option>
+                        <option value="Bulua" selected>Bulua</option>
+                        <option value="Iligan">Iligan</option>   
+                    </select>
+                </div>
+
+
+
+                <input type="submit" value="Submit" class="button2">
+                
+            </form>
+
+
+        </div>
 
         <div class="cards">
             <div class="card1">
